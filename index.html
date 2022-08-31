@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Geometric Figures</h1>
+    </header>
+    <main>
+        <section class="Square">
+            <img src="https://pngimg.com/uploads/square/square_PNG35.png" alt="square">
+            <form action="">
+                <label for="SquareInput">
+                    Write the measure
+                </label>
+                <input  id="SquareInput" type="number" class="sqr-input">
+                <button class="SqrPmBt" type="button" onclick="calculateSquarePerimeter()">Perimeter</button>
+                <button class="SqrArBt" type="button" onclick="calculateSquareArea()">Area</button>
+            </form>
+            <!-- <img src="https://pngimg.com/uploads/square/square_PNG35.png" alt="square"> -->
+        </section>
+
+        <section class="Triangle">
+            <img src="https://imagepng.org/wp-content/uploads/2018/10/triangulo-equilatero-2-1.png" alt="Triangle">
+            <label for="TriangleInput1">
+                Write the measures of side 1
+            </label>
+            <input id="TriangleInput1" type="number" class="sTrngl">
+            <label for="TriangleInput2">
+                Write the measures of side 2
+            </label>
+            <input id="TriangleInput2" type="number" class="sTrngl">
+            <label for="TriangleInput3">
+                Write the measure of the base
+            </label>
+            <input id="TriangleInput3" type="number" class="sTrngl">
+            <button class="TrnglPmBt" type="button" onclick="calculateTrianglePerimeter()">Perimeter</button>
+            <button class="TrnglArBt" type="button" onclick="calculateTriangleArea()">Area</button>
+        </form>
+        </section>
+
+        <section class="Circle">
+            <img src="https://th.bing.com/th/id/R.306265a58f7c32de47fbc62c7ca62e8b?rik=Fnd%2bPwS2F60eeg&riu=http%3a%2f%2fgetdrawings.com%2fvectors%2fcirculo-vector-10.png&ehk=XRJEg32CoAYnwplvMY0ECOlOeVXLPq3gRrTn5ljkpW8%3d&risl=&pid=ImgRaw&r=0" alt="circle">
+            <form action="">
+                <label for="CircleInput">
+                    Write the radius
+                </label>
+                <input id="CircleInput" type="number" class="CrclInput">
+                <button type="button" onclick="calculateCirclePerimeter()" class="CrclPmBt">Perimeter</button>
+                <button type="button" onclick="calculateCircleArea()" class="CrclArBt">Area</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <Span>This is my first project, so, thank you for the support</Span>
+    </footer>
+    <script src="./figures.js"></script>
+</body>
+</html>
